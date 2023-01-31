@@ -1,0 +1,13 @@
+---
+const { imgSrc, time, title } = Astro.props;
+---
+<div class="row my-100 d-flex align-items-center">
+	<div class="col-lg-4 mb-4">
+		<img class="project-img" src={imgSrc} width="90%"/>
+	</div>
+	<div class="col-lg-8 px-5">
+		<p class="m-0 small">{time}</p>
+		<h3 class="m-0">{title}</h3>
+		<slot />
+	</div>
+</div>

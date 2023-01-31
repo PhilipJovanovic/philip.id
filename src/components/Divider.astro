@@ -1,0 +1,10 @@
+---
+export interface Props extends astroHTML.JSX.AnchorHTMLAttributes {}
+const { title } = Astro.props;
+---
+
+<div class="divider my-5">
+	<div class="left"></div>
+	<span>{title}</span>
+	<div class="right"></div>
+</div>
